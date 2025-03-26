@@ -10,14 +10,3 @@ This API enables users to upload and query CSV files using Retrieval-Augmented G
 - Uses open-source LLMs from Hugging Face or APIs from OpenAI/Anthropic.
 - Implements robust error handling with proper status codes.
 
-## API Endpoints
-
-### **1. POST /upload** - Upload a CSV file.
-**Request:** Multipart/form-data (CSV file) or JSON Body (`{ "file_path": "string" }`)  
-**Response:**  
-```json
-{
-    "file_id": "string",
-    "message": "Upload successful"
-}
-
