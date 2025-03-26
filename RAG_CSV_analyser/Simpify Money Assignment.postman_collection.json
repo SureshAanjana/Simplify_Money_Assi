@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "3831e637-f974-43bb-849a-3514497a9ab6",
+		"name": "Simpify Money Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43511418",
+		"_collection_link": "https://suresh-8873814.postman.co/workspace/Suresh's-Workspace~beeb1f86-7d40-40ff-875c-9e1e0e500541/collection/43511418-3831e637-f974-43bb-849a-3514497a9ab6?action=share&source=collection_link&creator=43511418"
+	},
+	"item": [
+		{
+			"name": "File Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1f00a83f-23db-4810-9f4c-5abe56c39aec"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/upload",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home Route",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/files",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"file_id\":\"5c174286-1437-4f1a-8922-9bb6135ef4d7\",\n    \"query\": \"a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete File",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/file/5c174286-1437-4f1a-8922-9bb6135ef4d7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"file",
+						"5c174286-1437-4f1a-8922-9bb6135ef4d7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
